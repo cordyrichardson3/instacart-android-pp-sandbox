@@ -3,6 +3,7 @@ package com.instacart.android.challenges
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import java.util.ArrayList
 
@@ -13,7 +14,8 @@ class ItemAdapter : RecyclerView.Adapter<ItemAdapter.ViewHolder>() {
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
         fun bind(row: ItemRow) {
-
+            itemView.findViewById<TextView>(R.id.item_textview)
+                .text = row.name
         }
     }
 

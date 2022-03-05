@@ -1,5 +1,7 @@
 package com.instacart.android.challenges.network
 
+import okhttp3.OkHttp
+import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.Retrofit.Builder
 import retrofit2.adapter.rxjava3.RxJava3CallAdapterFactory
